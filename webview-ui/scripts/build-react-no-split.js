@@ -132,3 +132,6 @@ config.plugins[4] = new webpack.DefinePlugin({
 // Rename main.{hash}.css to main.css
 config.plugins[5].options.filename = "static/css/[name].css"
 config.plugins[5].options.moduleFilename = () => "static/css/main.css"
+
+// Add inline source maps for easier debugging
+config.devtool = "inline-source-map"
